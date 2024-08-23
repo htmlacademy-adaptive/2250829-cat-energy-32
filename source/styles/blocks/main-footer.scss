@@ -1,0 +1,34 @@
+.main-footer {
+  background-color: #f2f2f2;
+}
+
+.main-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.main-footer__academy-link {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+}
+
+.main-footer__logo {
+  @media (min-width: $tablet-width) {
+    margin-right: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 416px;
+  }
+}

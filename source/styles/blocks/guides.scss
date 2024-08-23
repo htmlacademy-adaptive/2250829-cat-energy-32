@@ -1,0 +1,86 @@
+.guides {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.guides__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  display: block;
+  width: 200px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.guides__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 649px;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .guides__item {
+    width: 230px;
+  }
+
+  .guides__item:nth-child(odd) {
+    margin-right: 153px;
+  }
+
+  .guides__item--water {
+    width: 246px;
+  }
+
+  .guides__item--eat {
+    width: 247px;
+    margin-right: 137px;
+  }
+
+  .guides__item--clock {
+    width: 249px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .guides__item:not(:nth-child(4n)) {
+    margin-right: 77px;
+  }
+
+  .guides__item--eat {
+    width: 248px;
+  }
+
+  .guides__item--clock {
+    width: 250px;
+  }
+
+  .guides__item--leaf {
+    margin-right: 94px;
+  }
+
+  .guides__items--water {
+    margin-right: 79px;
+  }
+}

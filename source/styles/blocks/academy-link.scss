@@ -1,0 +1,22 @@
+.academy-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & .academy-link__logo {
+    color: #666666;
+  }
+
+  &:hover .academy-link__logo {
+    color: #68b738;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+}
