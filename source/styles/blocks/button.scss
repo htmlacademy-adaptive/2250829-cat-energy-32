@@ -19,7 +19,25 @@
   }
 }
 
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--show-more {
   background-color: #f2f2f2;
+  color: #444444;
+}
+
+.button--show-more:hover {
+  background-color: #ebebeb;
+}
+
+.button--show-more:active {
+  background-color: #ebebeb;
   color: #444444;
 }

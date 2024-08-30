@@ -1,7 +1,10 @@
 .extra-catalog {
   @media (min-width: $desktop-width) {
-    width: 896px;
-    margin: 0;
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -9,19 +12,81 @@
   font-family: $oswald;
   font-size: 24px;
   line-height: 24px;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 35px;
+  padding-right: 40px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    background-image: linear-gradient(to right, #ffffff 50%, #68b738 50%);
+    display: block;
+    height: 2px;
+    width: 100vw;
+    margin-left: calc((280px - 100vw) / 2);
+    margin-right: calc((280px - 100vw) / 2);
+    position: absolute;
+    z-index: -2;
+    top: 11px;
+  }
+
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
     margin-left: 40px;
+    margin-bottom: 80px;
+
+    &::before {
+      margin-left: -40px;
+      padding-right: 40px;
+    }
+
+    &::after {
+      background-image: none;
+      background-color: #68b738;
+      margin-left: calc((627px - 100vw) / 2);
+      margin-right: calc((627px - 100vw) / 2);
+      top: 15px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+
+    &::after {
+      margin-left: calc((1220px - 100vw) / 2);
+      margin-right: calc((1220px - 100vw) / 2);
+      top: 18px;
+    }
   }
 }
 
 .extra-catalog__list {
   padding: 0;
+  margin: 0;
   list-style-type: none;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    margin-bottom: 0;
+  }
 }

@@ -10,6 +10,14 @@
   }
 }
 
+.guides__title {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
 .guides__text {
   font-size: 14px;
   line-height: 18px;
@@ -27,12 +35,14 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  counter-reset: guides-counter 0;
 
   @media (min-width: $tablet-width) {
-    width: 649px;
-    margin-right: auto;
-    display: flex;
-    flex-wrap: wrap;
+    width: 633px;
+    flex-flow: row wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,12 +50,71 @@
   }
 }
 
+.guides__item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  counter-increment: guides-counter 1;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-image: url("../../icons/stack.svg#icon-leaf");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 32px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+  }
+
+  &--water::before {
+    background-image: url("../../icons/stack.svg#icon-water");
+    background-size: 26px 28.5px;
+  }
+
+  &--eat::before {
+    background-image: url("../../icons/stack.svg#icon-eat");
+    background-size: 25px 30px;
+  }
+
+  &--clock::before {
+    background-image: url("../../icons/stack.svg#icon-clock");
+    background-size: 26px 31px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .guides__item {
     width: 230px;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 57px;
+    position: relative;
+
+    &::after {
+      content: counter(guides-counter);
+      text-align: center;
+      font-family: $oswald;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      vertical-align: top;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
   }
 
-  .guides__item:nth-child(odd) {
+  .guides__item--leaf {
     margin-right: 153px;
   }
 

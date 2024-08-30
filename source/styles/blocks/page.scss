@@ -17,3 +17,11 @@
     line-height: 24px;
   }
 }
+
+.page__main-header--index {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
