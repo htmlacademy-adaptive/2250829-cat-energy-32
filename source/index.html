@@ -10,6 +10,10 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -20,11 +24,11 @@
         <picture>
           <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-desktop.svg" width="70" height="59">
           <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-tablet.svg" width="60" height="50">
-          <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+          <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy" loading="lazy">
         </picture>
         <picture>
           <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-text-tablet.svg" width="118" height="21">
-          <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Текст логотипа">
+          <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Текст логотипа" loading="lazy">
         </picture>
       </a>
       <button class="main-nav__toggle" type="button">
@@ -47,9 +51,12 @@
         <h1 class="promo__title title">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <picture>
+          <source media="(min-width: 1440px)" type="image/webp" width="552" height="499" srcset="images/index-can-desktop@1x.webp, images/index-can-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" type="image/webp" width="709" height="609" srcset="images/index-can-tablet@1x.webp, images/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" width="280" height="270" srcset="images/index-can-mobile@1x.webp, images/index-can-mobile@2x.webp 2x">
           <source media="(min-width: 1440px)" type="image/png" width="552" height="499" srcset="images/index-can-desktop@1x.png, images/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" type="image/png" width="709" height="609" srcset="images/index-can-tablet@1x.png, images/index-can-tablet@2x.png 2x">
-          <img class="promo__image" src="images/index-can-mobile@1x.png" alt="Банка питания от Cat Energy" width="280" height="270" srcset="images/index-can-mobile@2x.png 2x">
+          <img class="promo__image" src="images/index-can-mobile@1x.png" alt="Банка питания от Cat Energy" width="280" height="270" srcset="images/index-can-mobile@2x.png 2x" loading="lazy">
         </picture>
         <a class="promo__link button" href="programme.html">Подобрать программу</a>
       </div>
@@ -60,12 +67,12 @@
       <h2 class="visually-hidden">Программы</h2>
       <ul class="programs__list">
         <li class="programs__item program">
-          <h2 class="program__title">Похудение</h2>
+          <h3 class="program__title">Похудение</h3>
           <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="program__link" href="#">Каталог slim</a>
         </li>
         <li class="programs__item program program--muscle">
-          <h2 class="program__title">Набор массы</h2>
+          <h3 class="program__title">Набор массы</h3>
           <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="program__link" href="#">Каталог pro</a>
         </li>
@@ -111,12 +118,16 @@
         <p class="example__price"><span>Затраты на питание:</span> <span>15 000 РУБ.</span></p>
         <div class="example__range-container">
           <picture>
+            <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="images/cat-before-tablet@1x.webp, images/cat-before-tablet@2x.webp 2x">
+            <source type="image/webp" width="280" height="256" srcset="images/cat-before-mobile@1x.webp, images/cat-before-mobile@2x.webp 2x">
             <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/cat-before-tablet@1x.png, images/cat-before-tablet@2x.png 2x">
-            <img class="example__before" src="images/cat-before-mobile@1x.png" alt="Толстый кот" width="280" height="256" srcset="images/cat-before-mobile@2x.png 2x">
+            <img class="example__before" src="images/cat-before-mobile@1x.png" alt="Толстый кот" width="280" height="256" srcset="images/cat-before-mobile@2x.png 2x" loading="lazy">
           </picture>
           <picture>
+            <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="images/cat-after-tablet@1x.webp, images/cat-after-tablet@2x.webp 2x">
+            <source type="image/webp" width="280" height="256" srcset="images/cat-after-mobile@1x.webp, images/cat-after-mobile@2x.webp 2x">
             <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/cat-after-tablet@1x.png, images/cat-after-tablet@2x.png 2x">
-            <img class="example__after" src="images/cat-after-mobile@1x.png" alt="Худой кот" width="280" height="256" srcset="images/cat-after-mobile@2x.png 2x">
+            <img class="example__after" src="images/cat-after-mobile@1x.png" alt="Худой кот" width="280" height="256" srcset="images/cat-after-mobile@2x.png 2x" loading="lazy">
           </picture>
           <button class="example__range-bar" aria-label="Переключение картинок с котами до и после" type="button">
             <span class="example__range-toggle"></span>
@@ -136,11 +147,14 @@
         </address>
       </div>
       <picture>
+        <source media="(min-width: 1440px)" type="image/webp" width="1440" height="400" srcset="images/map-desktop@1x.webp, images/map-desktop@2x.webp 2x">
+        <source media="(min-width: 768px)" type="image/webp" width="768" height="400" srcset="images/map-tablet@1x.webp, images/map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="images/map-mobile@1x.webp, images/map-mobile@2x.webp 2x" width="320" height="362">
         <source media="(min-width: 1440px)" type="image/png" width="1440" height="400" srcset="images/map-desktop@1x.png, images/map-desktop@2x.png 2x">
         <source media="(min-width: 768px)" type="image/png" width="768" height="400" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x">
-        <img class="address__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта" width="320" height="362">
+        <img class="address__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта" width="320" height="362" loading="lazy">
       </picture>
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d629.5220139510882!2d30.322572115265263!3d59.93864920597589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2s!4v1724909471681!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d629.5220139510882!2d30.322572115265263!3d59.93864920597589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2s!4v1724909471681!5m2!1sru!2s" width="600" height="1000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
   <footer class="main-footer">

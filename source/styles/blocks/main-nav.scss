@@ -84,6 +84,7 @@
     column-gap: 33px;
     align-self: flex-end;
     background-color: inherit;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,6 +105,10 @@
 
 .main-nav__list--opened {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav__item {
@@ -147,11 +152,17 @@
   color: #000000;
   vertical-align: center;
   box-sizing: border-box;
-  height: 30px;
+  max-width: 280px;
+  padding-top: 22px;
+  padding-bottom: 23px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    max-width: 100%;
+    padding: 0;
+    padding-bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {

@@ -26,7 +26,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template-columns: 436px auto;
     column-gap: 224px;
   }
@@ -73,6 +72,7 @@
   gap: 32px;
   margin-bottom: 34px;
   align-items: center;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     gap: 43px;
@@ -93,6 +93,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   position: relative;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -215,7 +216,6 @@
 .example__before,
 .example__after {
   width: max-content;
-  height: 100%;
   display: block;
 }
 

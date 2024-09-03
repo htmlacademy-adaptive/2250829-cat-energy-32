@@ -12,6 +12,7 @@
   font-family: $oswald;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   display: inline-block;
   margin: 0;
   margin-bottom: 35px;
@@ -66,6 +67,8 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+    font-size: 40px;
+    line-height: 40px;
 
     &::after {
       margin-left: calc((1220px - 100vw) / 2);
