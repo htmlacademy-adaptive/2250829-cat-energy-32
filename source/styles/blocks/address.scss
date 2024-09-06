@@ -87,9 +87,13 @@
     line-height: 20px;
     text-align: right;
     width: 157px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 157px;
+    text-align: left;
   }
 }

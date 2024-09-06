@@ -32,10 +32,6 @@
     background-position: center;
   }
 
-  @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/event-image-mobile@2x.png");
-  }
-
   @media (min-width: $tablet-width) {
     text-align: left;
     display: flex;
@@ -48,10 +44,6 @@
       height: 82px;
       margin-right: 264px;
       margin-bottom: 0;
-    }
-
-    @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/event-image-tablet@2x.png");
     }
   }
 

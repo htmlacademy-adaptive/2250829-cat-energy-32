@@ -1,6 +1,15 @@
 .main-footer {
   background-color: #f2f2f2;
   padding: 40px 0;
+  padding-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding: 56.5px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 67.5px 0;
+  }
 }
 
 .main-footer__container {
@@ -11,7 +20,6 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
-
 
   @media (min-width: $desktop-width) {
     width: 1220px;

@@ -18,6 +18,16 @@
   }
 }
 
+.product-card:not(:first-child):not(:nth-child(2)) .product-card__title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23.4px;
+  }
+}
+
 .product-card__link {
   text-decoration: none;
   color: #222222;
