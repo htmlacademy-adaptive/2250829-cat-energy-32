@@ -2,6 +2,7 @@
 
 * Студент: [Кирилл Леухин](https://up.htmlacademy.ru/adaptive/32/user/2250829).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
+* Сайт: [Cat Energy](https://kirilldev100.github.io/Cat-Energy/).
 
 ---
 
