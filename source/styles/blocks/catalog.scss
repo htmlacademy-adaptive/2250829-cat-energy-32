@@ -26,7 +26,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 63px 80px;
+    gap: 64px 80px;
     margin-bottom: 71px;
   }
 }
@@ -41,6 +41,11 @@
     width: 100%;
     box-sizing: border-box;
   }
+
+  @media (max-width: 319px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .catalog__item:not(:last-child) {
@@ -52,18 +57,16 @@
 }
 
 .catalog__title {
-  margin-left: calc((100vw - 280px) / 2);
+  margin: 0 auto;
   margin-top: 27px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-left: calc((100vw - 708px) / 2);
     margin-bottom: 84px;
     margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: calc((100vw - 1220px) / 2);
     margin-top: 45px;
   }
 }
