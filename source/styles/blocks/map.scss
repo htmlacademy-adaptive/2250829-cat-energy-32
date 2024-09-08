@@ -1,0 +1,17 @@
+.map {
+  display: none;
+  border: none;
+  width: 100%;
+  height: 362px;
+  top: 0;
+  bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    position: absolute;
+  }
+}

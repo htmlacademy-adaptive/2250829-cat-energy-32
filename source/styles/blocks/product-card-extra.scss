@@ -1,0 +1,131 @@
+.product-card-extra {
+  padding-top: 13px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
+  &:nth-child(2) {
+    padding-top: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #cdcdcd;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 38px;
+    padding-top: 26px;
+    padding-bottom: 27px;
+    justify-content: space-between;
+
+    &:nth-child(2) {
+      padding-top: 26px;
+    }
+
+    &:not(:first-child) {
+      border-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-content: left;
+      align-items: center;
+      padding-top: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 1px;
+    padding-bottom: 16px;
+    padding-top: 15px;
+    border-left: 0;
+    border-right: 0;
+
+    &:nth-child(2) {
+      padding-top: 15px;
+    }
+  }
+}
+
+.product-card-extra__link {
+  text-decoration: none;
+  width: 100%;
+  min-height: 40px;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
+}
+
+.product-card-extra__title {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 225px;
+    margin-right: 100px;
+    text-align: left;
+  }
+}
+
+.product-card-extra__list {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #444444;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    gap: 49px;
+    margin-bottom: 20px;
+    align-items: flex-end;
+    margin-top: 4px;
+    margin-right: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 285px;
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product-card-extra:nth-child(2) .product-card-extra__list {
+    margin-top: 3px;
+    gap: 55px;
+  }
+
+  .product-card-extra:nth-child(3) .product-card-extra__list {
+    margin-top: 1px;
+    gap: 48px;
+  }
+
+  .product-card-extra:nth-child(4) .product-card-extra__list {
+    margin-top: 3px;
+  }
+
+  .product-card-extra__price {
+    margin: 0;
+  }
+}
